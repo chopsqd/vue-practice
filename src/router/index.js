@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MainPage from "@/pages/MainPage.vue";
-import PostsPage from "@/pages/PostsPage.vue";
-import AboutPage from "@/pages/AboutPage.vue";
-import PostPage from "@/pages/PostPage.vue";
+import {AboutPage, MainPage, PostPage, PostsPage} from "@/pages";
 
 const routes = [
   {
@@ -20,7 +17,7 @@ const routes = [
   {
     path: "/about",
     component: AboutPage,
-  },
+  }
 ];
 
 const router = createRouter({

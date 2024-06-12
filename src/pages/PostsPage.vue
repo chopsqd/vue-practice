@@ -90,9 +90,7 @@ export default {
               },
             }
         );
-        this.totalPages = Math.ceil(
-            response.headers["x-total-count"] / this.limit
-        );
+        this.totalPages = Math.ceil(response.headers["x-total-count"] / this.limit);
         this.posts = response.data;
       } catch (error) {
         alert(error);
@@ -112,9 +110,7 @@ export default {
               },
             }
         );
-        this.totalPages = Math.ceil(
-            response.headers["x-total-count"] / this.limit
-        );
+        this.totalPages = Math.ceil(response.headers["x-total-count"] / this.limit);
         this.posts = [...this.posts, ...response.data];
       } catch (error) {
         alert(error);
